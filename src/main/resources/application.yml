@@ -1,0 +1,21 @@
+spring:
+
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/dongyimaidb?serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+
+  thymeleaf:
+    cache: false
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
